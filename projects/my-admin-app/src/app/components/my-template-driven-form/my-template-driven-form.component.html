@@ -1,0 +1,7 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <app-my-control-value-accessor 
+        name="email" 
+        [ngModel]="user.email">
+    </app-my-control-value-accessor>
+    <button type="submit">Submit</button>
+</form>
